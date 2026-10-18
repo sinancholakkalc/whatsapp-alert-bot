@@ -37,18 +37,18 @@ client.on('ready', () => {
 });
 
 client.on('message', async (message) => {
-    
+
     const targetKeywords = ['വൈദ്യുതി'];
     const messageText = message.body.toLowerCase();
 
-    
+
     const isKeywordMatched = targetKeywords.some(keyword => messageText.includes(keyword));
 
     if (isKeywordMatched) {
         console.log(`Keyword matched! Message: ${message.body}`);
 
         const targetNumbers = [
-            '917025653318@c.us', 
+            '917025653318@c.us',
             '916238762595@c.us'
         ];
 
